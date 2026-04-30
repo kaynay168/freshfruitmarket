@@ -1,0 +1,181 @@
+/* 
+Author: Wen Fan
+Date: 2/18/26
+File Name: style.css
+*/  
+
+/* RESET */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* BODY */
+body {
+    background-color: #0d0d0d;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e6e6e6;
+    text-align: center;
+}
+
+/* WRAPPER */
+#wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 5% auto;
+    background-color: #1a0000;
+    border: 2px solid #ff1a1a;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    background-color: #000;
+    color: #ff4d4d;
+    padding: 2%;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top: 1px solid #330000;
+    padding: 1%;
+}
+
+nav li a {
+    display: block;
+    color: #ff4d4d;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ff1a1a;
+    color: #000;
+}
+
+/* MAIN */
+main {
+    padding: 2%;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+main h2 {
+    color: #ff4d4d;
+}
+
+/* SECTIONS */
+section {
+    background-color: #0d0d0d;
+    border: 1px solid #330000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/* FRUIT IMAGES (FIXED) */
+.fruit-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+/* LINKS */
+.link {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    font-size: 0.85em;
+    background-color: #000;
+    color: #999;
+    padding: 1%;
+}
+
+/* FORM */
+fieldset, input, textarea {
+    margin-bottom: 2%;
+}
+
+label {
+    display: block;
+    padding-top: 2%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 2%;
+    background-color: #ff1a1a;
+    color: #000;
+    font-size: 1.25em;
+    border-radius: 10px;
+    border: none;
+}
+
+/* TABLES */
+table {
+    border: 1px solid #ff1a1a;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #330000;
+    padding: 1%;
+}
+
+th {
+    background-color: #1a0000;
+    color: #ff4d4d;
+}
+
+tr:nth-child(odd) {
+    background-color: #1a1a1a;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* TABLET */
+@media screen and (min-width: 620px) {
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+    }
+
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
